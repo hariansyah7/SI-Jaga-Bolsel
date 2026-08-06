@@ -60,7 +60,8 @@ export const INITIAL_USERS: User[] = [
     agency: 'Inspektorat Daerah Kab. Bolaang Mongondow Selatan',
     phone: '0812-4455-8899',
     isActive: true,
-    lastLogin: '2026-08-03 21:40'
+    lastLogin: '2026-08-03 21:40',
+    password: 'superadmin1A'
   },
   {
     id: 'usr-op1',
@@ -72,7 +73,8 @@ export const INITIAL_USERS: User[] = [
     agency: 'Inspektorat Daerah Kab. Bolaang Mongondow Selatan',
     phone: '0852-9988-7711',
     isActive: true,
-    lastLogin: '2026-08-03 20:15'
+    lastLogin: '2026-08-03 20:15',
+    password: 'admin12345'
   },
   {
     id: 'usr-insp',
@@ -84,7 +86,8 @@ export const INITIAL_USERS: User[] = [
     agency: 'Inspektorat Daerah Kab. Bolaang Mongondow Selatan',
     phone: '0813-5678-9012',
     isActive: true,
-    lastLogin: '2026-08-03 19:30'
+    lastLogin: '2026-08-03 19:30',
+    password: 'admin12345'
   },
   {
     id: 'usr-auditor1',
@@ -96,7 +99,8 @@ export const INITIAL_USERS: User[] = [
     agency: 'Inspektorat Daerah Kab. Bolaang Mongondow Selatan',
     phone: '0821-3344-5566',
     isActive: true,
-    lastLogin: '2026-08-03 18:50'
+    lastLogin: '2026-08-03 18:50',
+    password: 'admin12345'
   }
 ];
 

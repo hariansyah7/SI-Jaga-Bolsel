@@ -216,8 +216,10 @@ export const UserManagement: React.FC = () => {
 
                   <td className="p-4 text-slate-700">{u.position}</td>
 
-                  <td className="p-4 font-mono text-slate-500 text-[11px]">
-                    {u.password ? u.password : '••••••••'}
+                  <td className="p-4 font-mono">
+                    <span className="bg-amber-50 border border-amber-200 text-amber-900 font-bold px-2 py-1 rounded-md text-[11px] inline-block">
+                      {u.password || (u.role === 'admin' ? 'superadmin1A' : 'admin12345')}
+                    </span>
                   </td>
 
                   <td className="p-4">
