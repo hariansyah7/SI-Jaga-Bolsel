@@ -127,6 +127,7 @@ export interface User {
   isActive: boolean;
   avatarUrl?: string;
   lastLogin?: string;
+  password?: string;
 }
 
 export interface CategoryMaster {

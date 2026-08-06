@@ -54,7 +54,7 @@ export const INITIAL_USERS: User[] = [
     id: 'usr-admin',
     nip: '199111122022031003',
     name: 'Hariansah Noviyanto, SE',
-    email: 'admin.wbs@bolselkab.go.id',
+    email: 'hariansyah25@gmail.com',
     role: 'admin',
     position: 'Pranata Komputer Ahli Muda / System Admin WBS',
     agency: 'Inspektorat Daerah Kab. Bolaang Mongondow Selatan',
