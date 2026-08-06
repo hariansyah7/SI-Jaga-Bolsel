@@ -1,0 +1,6 @@
+{
+  "name": "Whistleblower System - Inspektorat Kab. Bolaang Mongondow Selatan",
+  "description": "Media resmi pelaporan dugaan tindak korupsi, gratifikasi, dan penyalahgunaan wewenang Inspektorat Daerah Kabupaten Bolaang Mongondow Selatan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

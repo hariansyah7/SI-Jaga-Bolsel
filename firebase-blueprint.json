@@ -1,0 +1,32 @@
+{
+  "entities": {
+    "reports": {
+      "title": "WBS Complaints / Reports",
+      "description": "Collection storing whistleblower complaints submitted by citizens or anonymous reporters",
+      "properties": {
+        "id": { "type": "string" },
+        "ticketCode": { "type": "string" },
+        "secretPin": { "type": "string" },
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "chronology": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "users": {
+      "title": "WBS Admin & Staff Users",
+      "description": "Collection storing user profiles for WBS system staff (Admin, Operator, Inspektur, Auditor)",
+      "properties": {
+        "id": { "type": "string" },
+        "nip": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string" },
+        "position": { "type": "string" },
+        "agency": { "type": "string" },
+        "isActive": { "type": "boolean" }
+      }
+    }
+  }
+}

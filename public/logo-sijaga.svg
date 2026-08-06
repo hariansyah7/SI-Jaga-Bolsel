@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Definitions for gradient & shadows -->
+  <defs>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E53935" />
+      <stop offset="100%" stop-color="#B71C1C" />
+    </linearGradient>
+    <filter id="subtleDrop" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background container for high legibility -->
+  <rect width="500" height="500" rx="40" fill="#FFFFFF"/>
+
+  <!-- SI-JAGA Interlocking Geometric Emblem -->
+  <g transform="translate(250, 185)" filter="url(#subtleDrop)">
+    <!-- Main Red Ribbon Loop 1 -->
+    <path d="M -75 -15 L -15 -75 C -5 -85 10 -85 20 -75 L 75 -20 C 85 -10 85 5 75 15 L 15 75 C 5 85 -10 85 -20 75 L -75 20 C -85 10 -85 -5 -75 -15 Z" fill="url(#redGrad)"/>
+    
+    <!-- White Interlocking Knot Accent -->
+    <path d="M -45 -45 L 45 45 M -45 45 L 45 -45" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round"/>
+    <path d="M -45 -45 L 45 45 M -45 45 L 45 -45" stroke="url(#redGrad)" stroke-width="12" stroke-linecap="round"/>
+
+    <!-- Central Inner Diamond Motif -->
+    <polygon points="0,-25 25,0 0,25 -25,0" fill="#FFFFFF"/>
+    <polygon points="0,-14 14,0 0,14 -14,0" fill="#B71C1C"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="250" y="375" font-family="'Plus Jakarta Sans', 'Arial Black', sans-serif" font-weight="900" font-size="54" fill="#C62828" text-anchor="middle" letter-spacing="4">SI-JAGA</text>
+  <text x="250" y="415" font-family="'Plus Jakarta Sans', 'Arial', sans-serif" font-weight="800" font-size="15" fill="#1E293B" text-anchor="middle" letter-spacing="1">INSPEKTORAT KAB. BOLAANG MONGONDOW SELATAN</text>
+  <text x="250" y="440" font-family="'Plus Jakarta Sans', 'Arial', sans-serif" font-weight="600" font-size="12" fill="#64748B" text-anchor="middle" letter-spacing="0.5">Sistem Integritas &amp; Jaringan Aduan Gratifikasi</text>
+</svg>
