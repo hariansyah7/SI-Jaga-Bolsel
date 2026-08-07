@@ -11,6 +11,8 @@ import {
   getAdminProfile, 
   updateAdminPassword 
 } from '../config/authConfig';
+import uploadedLogo from '../assets/uploaded_logo.png';
+import logoBolsel from '../assets/logo_bolsel.svg';
 
 interface LoginModalProps {
   isOpen: boolean;
@@ -110,15 +112,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onClose, onLogin
           <div className="flex items-center gap-2 shrink-0">
             <div className="h-11 px-1.5 py-1 rounded-xl bg-white border border-slate-200 flex items-center justify-center shadow-md">
               <img 
-                src="/logo-bolsel.png" 
-                alt="Logo Pemkab Bolsel" 
-                className="h-full w-auto max-w-[45px] object-contain"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-            <div className="h-11 px-1.5 py-1 rounded-xl bg-white border border-slate-200 flex items-center justify-center shadow-md">
-              <img 
-                src="/logo-sijaga.png" 
+                src={uploadedLogo} 
                 alt="Logo SI-JAGA" 
                 className="h-full w-auto max-w-[45px] object-contain"
                 referrerPolicy="no-referrer"

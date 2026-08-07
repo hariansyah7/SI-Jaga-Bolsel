@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Shield, Clock, FileText, Lock, Menu, X, LogOut, ChevronRight } from 'lucide-react';
 import { User } from '../types/wbs';
+import uploadedLogo from '../assets/uploaded_logo.png';
+import logoBolsel from '../assets/logo_bolsel.svg';
 
 interface HeaderProps {
   activeTab: string;
@@ -114,15 +116,7 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="flex items-center space-x-2">
               <div className="h-11 px-1.5 py-1 bg-white border border-slate-200 rounded-xl flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform shrink-0">
                 <img 
-                  src="/logo-bolsel.png" 
-                  alt="Logo Pemkab Bolsel" 
-                  className="h-full w-auto max-w-[50px] object-contain"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              <div className="h-11 px-1.5 py-1 bg-white border border-slate-200 rounded-xl flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform shrink-0">
-                <img 
-                  src="/logo-sijaga.png" 
+                  src={uploadedLogo} 
                   alt="Logo SI-JAGA" 
                   className="h-full w-auto max-w-[50px] object-contain"
                   referrerPolicy="no-referrer"

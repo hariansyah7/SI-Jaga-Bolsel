@@ -17,14 +17,14 @@ import { User } from '../types/wbs';
 // BARIS 20-25: ATUR KREDENSIAL UTAMA ADMIN DI SINI
 // -------------------------------------------------------------------------
 export const ADMIN_CONFIG = {
-  nip: '199111122022031003',                  // <-- BARIS 22: Edit NIP Admin
-  email: 'hariansyah25@gmail.com',            // <-- BARIS 23: Edit Email Admin
-  name: 'Hariansah Noviyanto, SE',            // <-- BARIS 24: Edit Nama Admin
-  password: 'superadmin1A',                   // <-- BARIS 25: Edit Password Admin (Polos / Hashed)
+  nip: import.meta.env.VITE_ADMIN_NIP || '199111122022031003',                  // NIP Admin
+  email: import.meta.env.VITE_ADMIN_EMAIL || 'hariansyah25@gmail.com',          // Email Admin
+  name: import.meta.env.VITE_ADMIN_NAME || 'Hariansah Noviyanto, SE',           // Nama Admin
+  password: import.meta.env.VITE_ADMIN_PASSWORD || 'superadmin1A',               // Password Admin
   role: 'admin' as const,
-  position: 'Pranata Komputer Ahli Muda / System Admin WBS',
-  agency: 'Inspektorat Daerah Kab. Bolaang Mongondow Selatan',
-  phone: '0812-4455-8899'
+  position: import.meta.env.VITE_ADMIN_POSITION || 'Pranata Komputer Ahli Muda / System Admin WBS',
+  agency: import.meta.env.VITE_ADMIN_AGENCY || 'Inspektorat Daerah Kab. Bolaang Mongondow Selatan',
+  phone: import.meta.env.VITE_ADMIN_PHONE || '082190877680'
 };
 
 // Key penyimpanan di LocalStorage browser

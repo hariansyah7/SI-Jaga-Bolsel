@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" width="100%" height="100%">
+  <!-- Outer Shield -->
+  <path d="M 250 15 
+           C 340 15, 430 40, 485 100 
+           C 500 240, 470 410, 250 585 
+           C 30 410, 0 240, 15 100 
+           C 70 40, 160 15, 250 15 Z" 
+        fill="#0B63B6" stroke="#FFC107" stroke-width="14" stroke-linejoin="round"/>
+  
+  <path d="M 250 25 
+           C 335 25, 420 48, 473 105 
+           C 487 238, 458 400, 250 568 
+           C 42 400, 13 238, 27 105 
+           C 80 48, 165 25, 250 25 Z" 
+        fill="none" stroke="#0B63B6" stroke-width="4"/>
+
+  <!-- Yellow Star at Top -->
+  <polygon points="250,50 256,68 275,68 260,79 265,97 250,86 235,97 240,79 225,68 244,68" fill="#FFD54F" stroke="#F57F17" stroke-width="1.5"/>
+
+  <!-- Inner Pentagonal Frame -->
+  <g id="inner-pentagon">
+    <clipPath id="pentagon-clip">
+      <polygon points="250,105 450,210 410,480 90,480 50,210"/>
+    </clipPath>
+
+    <g clip-path="url(#pentagon-clip)">
+      <!-- Sky Background inside pentagon -->
+      <rect x="40" y="100" width="420" height="390" fill="#29B6F6"/>
+      
+      <!-- Green Mountains -->
+      <polygon points="50,240 180,150 290,240" fill="#2E7D32"/>
+      <polygon points="210,240 330,160 450,240" fill="#388E3C"/>
+      <polygon points="120,240 250,175 370,240" fill="#1B5E20" opacity="0.4"/>
+
+      <!-- Blue Ocean Waves -->
+      <rect x="40" y="240" width="420" height="160" fill="#0288D1"/>
+      <path d="M 40 260 Q 90 250 140 260 T 240 260 T 340 260 T 440 260
+               M 40 280 Q 90 270 140 280 T 240 280 T 340 280 T 440 280
+               M 40 300 Q 90 290 140 300 T 240 300 T 340 300 T 440 300
+               M 40 320 Q 90 310 140 320 T 240 320 T 340 320 T 440 320
+               M 40 340 Q 90 330 140 340 T 240 340 T 340 340 T 440 340" 
+            fill="none" stroke="#FFFFFF" stroke-width="4" opacity="0.9"/>
+
+      <!-- Yellow Base Soil at bottom of pentagon -->
+      <rect x="40" y="390" width="420" height="100" fill="#FBC02D"/>
+
+      <!-- Central Coconut Palm Tree -->
+      <!-- Trunk -->
+      <path d="M 242 410 L 244 190 Q 250 185 256 190 L 258 410 Z" fill="#8D6E63" stroke="#4E342E" stroke-width="2"/>
+      <!-- Trunk Rings -->
+      <line x1="243" y1="220" x2="257" y2="220" stroke="#4E342E" stroke-width="2"/>
+      <line x1="243" y1="250" x2="257" y2="250" stroke="#4E342E" stroke-width="2"/>
+      <line x1="243" y1="280" x2="257" y2="280" stroke="#4E342E" stroke-width="2"/>
+      <line x1="243" y1="310" x2="257" y2="310" stroke="#4E342E" stroke-width="2"/>
+      <line x1="243" y1="340" x2="257" y2="340" stroke="#4E342E" stroke-width="2"/>
+      <line x1="243" y1="370" x2="257" y2="370" stroke="#4E342E" stroke-width="2"/>
+
+      <!-- Palm Fronds (Leaves) -->
+      <path d="M 250 185 Q 180 140 120 180 Q 180 170 250 185" fill="#2E7D32" stroke="#1B5E20"/>
+      <path d="M 250 185 Q 320 140 380 180 Q 320 170 250 185" fill="#2E7D32" stroke="#1B5E20"/>
+      <path d="M 250 185 Q 170 190 100 230 Q 170 210 250 185" fill="#388E3C" stroke="#1B5E20"/>
+      <path d="M 250 185 Q 330 190 400 230 Q 330 210 250 185" fill="#388E3C" stroke="#1B5E20"/>
+      <path d="M 250 185 Q 210 130 190 80 Q 230 130 250 185" fill="#4CAF50" stroke="#1B5E20"/>
+      <path d="M 250 185 Q 290 130 310 80 Q 270 130 250 185" fill="#4CAF50" stroke="#1B5E20"/>
+
+      <!-- Coconuts -->
+      <circle cx="242" cy="195" r="8" fill="#FFF59D" stroke="#F57F17" stroke-width="1.5"/>
+      <circle cx="258" cy="195" r="8" fill="#FFF59D" stroke="#F57F17" stroke-width="1.5"/>
+      <circle cx="250" cy="204" r="8" fill="#FFF59D" stroke="#F57F17" stroke-width="1.5"/>
+
+      <!-- Crossed Weapons: Red Sword / Spear & Black/Red Pari Shield -->
+      <!-- Red Saber/Pida crossing from bottom-left to top-right -->
+      <g transform="rotate(35 250 310)">
+        <rect x="246" y="200" width="8" height="200" rx="3" fill="#D32F2F" stroke="#B71C1C" stroke-width="2"/>
+        <path d="M 235 370 Q 250 350 265 370 L 260 410 Q 250 420 240 410 Z" fill="#B71C1C" stroke="#795548"/>
+      </g>
+
+      <!-- Black Patterned Traditional Pari Shield crossing from bottom-right to top-left -->
+      <g transform="rotate(-35 250 310)">
+        <polygon points="238,200 262,200 268,410 232,410" fill="#212121" stroke="#000000" stroke-width="2"/>
+        <line x1="250" y1="210" x2="250" y2="400" stroke="#D32F2F" stroke-width="3" stroke-dasharray="6,4"/>
+        <circle cx="250" cy="240" r="4" fill="#D32F2F"/>
+        <circle cx="250" cy="280" r="4" fill="#D32F2F"/>
+        <circle cx="250" cy="320" r="4" fill="#D32F2F"/>
+        <circle cx="250" cy="360" r="4" fill="#D32F2F"/>
+      </g>
+    </g>
+
+    <!-- Pentagonal Border Line -->
+    <polygon points="250,105 450,210 410,480 90,480 50,210" fill="none" stroke="#1565C0" stroke-width="6"/>
+  </g>
+
+  <!-- Paddy (Padi) - Left Side -->
+  <g id="padi" fill="#FFD54F" stroke="#F57F17" stroke-width="1">
+    <path d="M 90 470 Q 60 330 120 170" fill="none" stroke="#FBC02D" stroke-width="5"/>
+    <ellipse cx="115" cy="180" rx="12" ry="6" transform="rotate(-30 115 180)"/>
+    <ellipse cx="102" cy="200" rx="13" ry="6" transform="rotate(-35 102 200)"/>
+    <ellipse cx="92" cy="225" rx="14" ry="6" transform="rotate(-40 92 225)"/>
+    <ellipse cx="82" cy="250" rx="14" ry="6" transform="rotate(-45 82 250)"/>
+    <ellipse cx="75" cy="275" rx="14" ry="6" transform="rotate(-45 75 275)"/>
+    <ellipse cx="70" cy="300" rx="14" ry="6" transform="rotate(-50 70 300)"/>
+    <ellipse cx="68" cy="325" rx="14" ry="6" transform="rotate(-50 68 325)"/>
+    <ellipse cx="68" cy="350" rx="14" ry="6" transform="rotate(-55 68 350)"/>
+    <ellipse cx="72" cy="375" rx="14" ry="6" transform="rotate(-60 72 375)"/>
+    <ellipse cx="78" cy="400" rx="14" ry="6" transform="rotate(-65 78 400)"/>
+    <ellipse cx="88" cy="425" rx="14" ry="6" transform="rotate(-70 88 425)"/>
+    <ellipse cx="100" cy="450" rx="14" ry="6" transform="rotate(-75 100 450)"/>
+  </g>
+
+  <!-- Cotton (Kapas) - Right Side -->
+  <g id="kapas">
+    <path d="M 410 470 Q 440 330 380 170" fill="none" stroke="#2E7D32" stroke-width="4"/>
+    <g transform="translate(385, 175)">
+      <path d="M -8 2 Q 0 -10 8 2 Q 0 8 -8 2" fill="#2E7D32"/>
+      <circle cx="0" cy="-6" r="11" fill="#FFFFFF" stroke="#ECEFF1" stroke-width="1.5"/>
+    </g>
+    <g transform="translate(400, 205)">
+      <path d="M -8 2 Q 0 -10 8 2 Q 0 8 -8 2" fill="#2E7D32"/>
+      <circle cx="0" cy="-6" r="11" fill="#FFFFFF" stroke="#ECEFF1" stroke-width="1.5"/>
+    </g>
+    <g transform="translate(412, 235)">
+      <path d="M -8 2 Q 0 -10 8 2 Q 0 8 -8 2" fill="#2E7D32"/>
+      <circle cx="0" cy="-6" r="12" fill="#FFFFFF" stroke="#ECEFF1" stroke-width="1.5"/>
+    </g>
+    <g transform="translate(422, 265)">
+      <path d="M -8 2 Q 0 -10 8 2 Q 0 8 -8 2" fill="#2E7D32"/>
+      <circle cx="0" cy="-6" r="12" fill="#FFFFFF" stroke="#ECEFF1" stroke-width="1.5"/>
+    </g>
+    <g transform="translate(428, 298)">
+      <path d="M -8 2 Q 0 -10 8 2 Q 0 8 -8 2" fill="#2E7D32"/>
+      <circle cx="0" cy="-6" r="12" fill="#FFFFFF" stroke="#ECEFF1" stroke-width="1.5"/>
+    </g>
+    <g transform="translate(428, 330)">
+      <path d="M -8 2 Q 0 -10 8 2 Q 0 8 -8 2" fill="#2E7D32"/>
+      <circle cx="0" cy="-6" r="12" fill="#FFFFFF" stroke="#ECEFF1" stroke-width="1.5"/>
+    </g>
+    <g transform="translate(422, 362)">
+      <path d="M -8 2 Q 0 -10 8 2 Q 0 8 -8 2" fill="#2E7D32"/>
+      <circle cx="0" cy="-6" r="12" fill="#FFFFFF" stroke="#ECEFF1" stroke-width="1.5"/>
+    </g>
+    <g transform="translate(410, 395)">
+      <path d="M -8 2 Q 0 -10 8 2 Q 0 8 -8 2" fill="#2E7D32"/>
+      <circle cx="0" cy="-6" r="12" fill="#FFFFFF" stroke="#ECEFF1" stroke-width="1.5"/>
+    </g>
+    <g transform="translate(395, 428)">
+      <path d="M -8 2 Q 0 -10 8 2 Q 0 8 -8 2" fill="#2E7D32"/>
+      <circle cx="0" cy="-6" r="12" fill="#FFFFFF" stroke="#ECEFF1" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- Golden Chain at Base (Rantai) -->
+  <g id="rantai" fill="#FFD54F" stroke="#F57F17" stroke-width="1.5">
+    <rect x="115" y="460" width="22" height="12" rx="6" transform="rotate(15 126 466)"/>
+    <rect x="145" y="468" width="22" height="12" rx="6" transform="rotate(10 156 474)"/>
+    <rect x="175" y="473" width="22" height="12" rx="6" transform="rotate(5 186 479)"/>
+    
+    <polygon points="210,470 222,462 234,470 234,484 222,492 210,484" fill="#FFFFFF" stroke="#B0BEC5" stroke-width="2"/>
+    <polygon points="238,472 250,464 262,472 262,486 250,494 238,486" fill="#FFFFFF" stroke="#B0BEC5" stroke-width="2"/>
+    <polygon points="266,470 278,462 290,470 290,484 278,492 266,484" fill="#FFFFFF" stroke="#B0BEC5" stroke-width="2"/>
+
+    <rect x="303" y="473" width="22" height="12" rx="6" transform="rotate(-5 314 479)"/>
+    <rect x="333" y="468" width="22" height="12" rx="6" transform="rotate(-10 344 474)"/>
+    <rect x="363" y="460" width="22" height="12" rx="6" transform="rotate(-15 374 466)"/>
+  </g>
+
+  <!-- Bottom Ribbon / Banner (Pita) -->
+  <g id="ribbon">
+    <path d="M 70 510 L 95 490 L 115 520 L 70 535 Z" fill="#CFD8DC"/>
+    <path d="M 430 510 L 405 490 L 385 520 L 430 535 Z" fill="#CFD8DC"/>
+    
+    <polygon points="65,500 110,490 100,528 50,530" fill="#FFFFFF" stroke="#37474F" stroke-width="2"/>
+    <polygon points="435,500 390,490 400,528 450,530" fill="#FFFFFF" stroke="#37474F" stroke-width="2"/>
+
+    <path d="M 80 500 Q 250 515 420 500 L 425 532 Q 250 548 75 532 Z" 
+          fill="#FFFFFF" stroke="#263238" stroke-width="3.5" stroke-linejoin="round"/>
+    
+    <text x="250" y="524" 
+          font-family="Arial, Helvetica, sans-serif" 
+          font-weight="900" 
+          font-size="18" 
+          fill="#000000" 
+          text-anchor="middle" 
+          letter-spacing="1">BOLAANG MONGONDOW SELATAN</text>
+  </g>
+</svg>

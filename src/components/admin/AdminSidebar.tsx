@@ -4,6 +4,8 @@ import {
   Layers, History, BarChart3, Settings, LogOut, ChevronRight, Shield, Award
 } from 'lucide-react';
 import { User, Role } from '../../types/wbs';
+import uploadedLogo from '../../assets/uploaded_logo.png';
+import logoBolsel from '../../assets/logo_bolsel.svg';
 
 interface AdminSidebarProps {
   activeView: string;
@@ -44,15 +46,7 @@ export const AdminSidebar: React.FC<AdminSidebarProps> = ({
           <div className="flex items-center gap-1.5 shrink-0">
             <div className="h-9 px-1 py-0.5 rounded-xl bg-white flex items-center justify-center shadow-md">
               <img 
-                src="/logo-bolsel.png" 
-                alt="Logo Pemkab Bolsel" 
-                className="h-full w-auto max-w-[36px] object-contain"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-            <div className="h-9 px-1 py-0.5 rounded-xl bg-white flex items-center justify-center shadow-md">
-              <img 
-                src="/logo-sijaga.png" 
+                src={uploadedLogo} 
                 alt="Logo SI-JAGA" 
                 className="h-full w-auto max-w-[36px] object-contain"
                 referrerPolicy="no-referrer"

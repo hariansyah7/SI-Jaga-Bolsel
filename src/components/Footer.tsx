@@ -1,5 +1,7 @@
 import React from 'react';
 import { MapPin, Phone, Mail, ShieldCheck, Lock } from 'lucide-react';
+import uploadedLogo from '../assets/uploaded_logo.png';
+import logoBolsel from '../assets/logo_bolsel.svg';
 
 interface FooterProps {
   setActiveTab: (tab: string) => void;
@@ -20,8 +22,8 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenLoginModal }
               <div className="flex items-center space-x-2">
                 <div className="h-10 px-1.5 py-1 bg-white rounded-xl flex items-center justify-center shadow-md shrink-0">
                   <img 
-                    src="/logo-bolsel.png" 
-                    alt="Logo Pemkab Bolsel" 
+                    src={uploadedLogo} 
+                    alt="Logo SI-JAGA" 
                     className="h-full w-auto max-w-[45px] object-contain"
                     referrerPolicy="no-referrer"
                   />
@@ -133,7 +135,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab, onOpenLoginModal }
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#C62828] shrink-0" />
-                <span>Call Center: (0434) 2627000 / WA 0812-4400-9900</span>
+                <span>082190877680</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-[#C62828] shrink-0" />
